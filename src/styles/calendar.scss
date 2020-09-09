@@ -4,23 +4,23 @@
   column-gap: 1px;
   width: 706px;
   margin: auto;
-  transform: translate(0, 20%);
+  transform: translateY(60px);
 
   div {
     width: $day-size;
     height: $day-size;
     border: solid 1px black;
-    transition: bottom 1.5s;
+    transition: bottom 0.5s background-color 0.5s;
     font-family: $main-font;
     text-align: center;
     line-height: $day-size;
     font-size: 30px;
     background-color: $day-color;
+    cursor: pointer;
 
     &:hover {
       position: relative;
-      bottom: 20px;
-      cursor: pointer;
+      transform: translateY(-20px);
       background-color: pink;
     }
   }
