@@ -2,6 +2,16 @@
 @import "calendar";
 @import "reset";
 
+html {
+  font-family: $main-font;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.page {
+  &__calendar {
+    margin: auto;
+  }
 }

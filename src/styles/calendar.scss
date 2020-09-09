@@ -1,17 +1,15 @@
 .calendar {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 1px;
-  width: 706px;
-  margin: auto;
+  gap: $day-gap;
+  width: ($day-size * 7) + ($day-gap * 6);
   transform: translateY(60px);
 
   div {
     width: $day-size;
     height: $day-size;
     border: solid 1px black;
-    transition: bottom 0.5s background-color 0.5s;
-    font-family: $main-font;
+    transition: transform 0.5s background-color 0.5s;
     text-align: center;
     line-height: $day-size;
     font-size: 30px;
@@ -19,7 +17,6 @@
     cursor: pointer;
 
     &:hover {
-      position: relative;
       transform: translateY(-20px);
       background-color: pink;
     }
