@@ -2,18 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: $day-gap;
-  width: ($day-size * 7) + ($day-gap * 6);
+  width: ($day-size * $week-days) + ($day-gap * $lines-between-days);
   transform: translateY(60px);
 
   div {
     width: $day-size;
     height: $day-size;
-    border: solid 1px black;
-    transition: transform 0.5s background-color 0.5s;
-    text-align: center;
     line-height: $day-size;
+    border: solid 1px black;
+    text-align: center;
     font-size: 30px;
     background-color: $day-color;
+    transition: transform 0.5s, background-color 0.5s;
     cursor: pointer;
 
     &:hover {
